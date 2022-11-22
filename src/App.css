@@ -1,38 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+	text-align: center;
+	background-color: #101927;
+	font-family: OpenSans, Arial, Helvetica, sans-serif;
+	line-height: 19px;
+	font-weight: 400;
+	font-size: 19px;
+	color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hidden {
+	display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#btn {
+	color: #20a867;
+	border: 1px solid #20a867;
+	padding: 0.5rem;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 17px;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	margin: 1rem;
+	background-color: #101927;
+	font-family: SourceCodePro, monaco, Courier, monospace;
+	width: max-content;
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.contest-component {
+	border-radius: 20px;
+	background-color: #101927;
+	color: #fff;
+	padding: 2rem;
+	margin: 2rem 4rem;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Fira Sans", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contest-component > div > a {
+	justify-content: center;
+	justify-items: center;
+}
+
+.contest-component:hover {
+	background-color: #1c2433;
+}
+
+.comp-div {
+	display: flex;
+	flex-direction: column;
+	background-color: #050d1a;
+}
+
+.contest-name {
+	font-size: 2rem;
+}
+
+.span > h4 {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.link {
+	color: #20a867;
+	border: 1px solid #20a867;
+	padding: 0.5rem;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 17px;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	font-family: SourceCodePro, monaco, Courier, monospace;
+}
+
+.link:hover {
+	background-color: #050d1a;
+}
+
+.site-name {
+	color: #20a867;
+}
+
+.contest-img {
+	height: 200px;
+	width: 200px;
+	border-radius: 20px;
+}
+
+.link-div {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
